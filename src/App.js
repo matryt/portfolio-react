@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Card from "./components/Card";
 import './App.css';
+import me from './img/me.jpg';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Header subtitle={"Accueil"}/>
+      <Card title="Présentation" img={me} alt="My Photo">
+        <p>Je m'appelle Mathieu CUVELIER, et je suis étudiant en deuxième année de prépa intégrée à Polytech Nice-Sophia.</p>
+        <p>Je suis passionné d'informatique, et plus particulièrement de développement (notamment Python et Java).</p>
+      </Card>
+      <Card title="&Eacute;ducation">
+
+      </Card>
     </div>
   );
 }

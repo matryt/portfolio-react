@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
+
+.card {
+    display: grid;
+    grid-template-areas: "card-title card-title" "img-container card-content";
+    grid-template-rows:auto 1fr;
+    grid-template-columns: auto 1fr;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    height: 300px;
+    border-radius: 10px;
+    backdrop-filter: blur(14px);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    text-align: center;
+    font-family: "MuseoModerno";
+    text-decoration: underline;
+    font-size:1.3em;
+    text-underline-offset: 3px;
+}
+
+.img-container {
+    grid-area: img-container;
+    margin-right: 30px;
+}
+
+.card-title {
+    grid-area: card-title;
+}
+
+.card-content {
+    grid-area: card-content;
+}
+
+.card img {
+    width: 15vw;
+    max-width: 200px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 22px 70px 4px;
+    display:block;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        display: block;
+    }
+    .card img {
+        margin: auto;
+        width: 20vw;
+        min-width: 100px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 70px 4px;
+    }
+
+    .img-container {
+        margin: 30px 0px;
+    }
+}
