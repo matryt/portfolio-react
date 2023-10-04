@@ -15,6 +15,7 @@
     padding: 10px;
     height: 100%;
     margin-bottom: 20px;
+    justify-content:center;
 }
 
 .card h3 {

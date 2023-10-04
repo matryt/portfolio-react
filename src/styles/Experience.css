@@ -1,0 +1,130 @@
+
+/* Timeline Container */
+.exp-timeline {
+background: var(--primary-color);
+margin: 20px auto;
+padding: 20px;
+width:30%;
+}
+
+/* Card container */
+.timeline-card {
+position: relative;
+max-width: 400px;
+}
+
+/* setting padding based on even or odd */
+.timeline-card.odd {
+padding: 30px 0 30px 30px;
+}
+.timeline-card.even {
+padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.timeline-card::before {
+content: "";
+position: absolute;
+width: 80%;
+border: solid #009371;
+}
+
+.timeline-card .info .exp-title::before {
+    top:25px;
+}
+
+/* Setting the border of top, bottom, left */
+.timeline-card.odd::before {
+left: 0px;
+top: -4.5px;
+bottom: -4.5px;
+border-width: 5px 0 5px 5px;
+border-radius: 50px 0 0 50px;
+}
+
+/* Setting the border of top, bottom, right */
+.timeline-card.even::before {
+right: -225px;
+top: 0;
+bottom: 0;
+border-width: 5px 5px 5px 0;
+border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first card */
+.timeline-card:first-child::before {
+}
+
+/* Removing the border if it is the last card  and it's odd */
+.timeline-card:last-child.odd::before {
+}
+
+/* Removing the border if it is the last card  and it's even */
+.timeline-card:last-child.even::before {
+}
+
+/* Information about the timeline */
+.exp-timeline .info {
+display: flex;
+flex-direction: column;
+border: 2px solid #009371;
+color: gray;
+border-radius: 10px;
+padding: 10px;
+width:600px;
+}
+
+/* Title of the card */
+.exp-title {
+color: #009371;
+position: relative;
+}
+
+/* Timeline dot  */
+.exp-title::before {
+content: "";
+position: absolute;
+width: 10px;
+height: 10px;
+background: white;
+border-radius: 999px;
+border: 3px solid #009371;
+}
+
+/* text right if the card is even  */
+.timeline-card.even .info .exp-title {
+text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+.timeline-card.odd .info .exp-title::before {
+left: -47px;
+}
+
+/* setting dot to the right if the card is odd */
+.timeline-card.even > .info > .exp-title::before {
+right: -47px;
+}
+
+.date {
+    text-align:center;
+    margin:0px;
+}
+
+.exp-title {
+    margin:0px;
+}
+
+.exp-timeline svg {
+    padding-top:2px;
+}
+
+.exp-timeline .infos {
+    display:grid;
+    grid-template:auto auto/20px 40fr;
+    margin-top: 5px;
+}
+
+.infos p {
+    margin:0px;
+}
+  
