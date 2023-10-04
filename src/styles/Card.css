@@ -36,6 +36,7 @@
 
 .card-content {
     grid-area: card-content;
+    height:100%;
 }
 
 .card img {
