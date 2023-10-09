@@ -1,10 +1,9 @@
 
 /* Timeline Container */
 .exp-timeline {
-background: var(--primary-color);
 margin: 20px auto;
 padding: 20px;
-width:30%;
+width:40%;
 }
 
 /* Card container */
@@ -25,7 +24,7 @@ padding: 30px 30px 30px 0;
 content: "";
 position: absolute;
 width: 80%;
-border: solid #009371;
+border: solid #C92C5B;
 }
 
 .timeline-card .info .exp-title::before {
@@ -50,24 +49,11 @@ border-width: 5px 5px 5px 0;
 border-radius: 0 50px 50px 0;
 }
 
-/* Removing the border if it is the first card */
-.timeline-card:first-child::before {
-}
-
-/* Removing the border if it is the last card  and it's odd */
-.timeline-card:last-child.odd::before {
-}
-
-/* Removing the border if it is the last card  and it's even */
-.timeline-card:last-child.even::before {
-}
-
 /* Information about the timeline */
 .exp-timeline .info {
 display: flex;
 flex-direction: column;
-border: 2px solid #009371;
-color: gray;
+border: 2px solid #C92C5B;
 border-radius: 10px;
 padding: 10px;
 width:600px;
@@ -75,7 +61,7 @@ width:600px;
 
 /* Title of the card */
 .exp-title {
-color: #009371;
+color: #66BCE1;
 position: relative;
 }
 
@@ -87,12 +73,7 @@ width: 10px;
 height: 10px;
 background: white;
 border-radius: 999px;
-border: 3px solid #009371;
-}
-
-/* text right if the card is even  */
-.timeline-card.even .info .exp-title {
-text-align: right;
+border: 3px solid #C92C5B;
 }
 
 /* setting dot to the left if the card is odd */

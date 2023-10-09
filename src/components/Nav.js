@@ -1,5 +1,4 @@
 import "../styles/Nav.css";
-import { Link } from "react-router-dom";
 import menu from "../img/menu.svg";
 
 export default function Nav() {
@@ -9,13 +8,13 @@ export default function Nav() {
             <img src={menu} height="30px" alt="menu"></img>
             <ul>
                 <li>
-                    <Link href="/">Accueil</Link>
+                    <a href="/">Accueil</a>
                 </li>
                 <li>
-                    <Link href="/projects">Projets</Link>
+                    <a href="/projects">Projets</a>
                 </li>
                 <li>
-                    <Link href="#contact">Contact</Link>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
             </div>

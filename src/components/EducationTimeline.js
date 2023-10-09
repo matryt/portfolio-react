@@ -2,7 +2,7 @@ import "../styles/Education.css"
 
 export default function EducationTimeline(props) {
     return (
-        <div class="educ-timeline">
+        <div className="educ-timeline">
             <ul>
                 {props.children}
             </ul>
