@@ -1,0 +1,26 @@
+li {
+    list-style-type: none;
+    margin: 0px 10px 3px 10px;
+    display: inline-block;
+    padding: 0px 5px;
+    border-left: 2px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+nav {
+    background-color: #009371;
+}
+
+nav ul {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}

@@ -1,0 +1,40 @@
+/* Define the grid layout for the products */
+.project {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 185px 1fr;
+    grid-gap: 1em;
+    position: relative;
+    width:300px;
+    border:5px solid #C92C5B;
+    border-radius:30px;
+}
+  
+  /* Add a blur effect to the product images */
+  .project img {
+    filter: blur(2px);
+    transition: filter 0.3s ease-in;
+    border-radius:25px 25px 0px 0px;
+    width:300px;
+  }
+  
+  /* Remove the blur effect when the product is hovered */
+  .project img:hover {
+    filter: blur(0px);
+  }
+  
+  /* Style and position the product name */
+  .project-name {
+    position: absolute;
+    top: 89%;
+    left: 0;
+    width:100%;
+    text-align:center;
+    border-radius:50px;
+    margin:0;
+  }
+
+  .name-container {
+    height:30px;
+    border-top:2px solid #C92C5B;
+  }
