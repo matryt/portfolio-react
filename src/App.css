@@ -1,21 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@600&display=swap');
-
 html {
   margin: auto;
 }
 
 body {
   margin: 10px;
+  background-color: #01091D;
+  color:#FFF;
 }
 
-header h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
-  color:#009371;
-  font-family: Tourney;
-  text-decoration: underline;
-}
+
