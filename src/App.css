@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 html {
   margin: auto;
 }
@@ -6,6 +8,7 @@ body {
   margin: 10px;
   background-color: #01091D;
   color:#FFF;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 
 

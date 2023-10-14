@@ -1,0 +1,26 @@
+label, button, input {
+    margin:10px;
+}
+
+body {
+    text-align: center;
+}
+
+input, textarea {
+    border-radius: 10px;
+    background-color: #C92C5B;
+    padding: 5px;
+    border: transparent;
+    text-align: center;
+    color:white;
+}
+
+textarea {
+    resize: none;
+}
+
+.contact-line {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

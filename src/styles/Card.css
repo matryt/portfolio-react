@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
-
 .card {
     display: grid;
     grid-template-areas: "card-title card-title" "img-container card-content";
@@ -20,9 +18,8 @@
 
 .card h3 {
     text-align: center;
-    font-family: "MuseoModerno";
     text-decoration: underline;
-    font-size:1.3em;
+    font-size:1.5em;
     text-underline-offset: 3px;
 }
 

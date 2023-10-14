@@ -1,10 +1,17 @@
 li {
     list-style-type: none;
-    margin: 0px 10px 3px 10px;
+    margin: 0px 10px 0px 10px;
     display: block;
     padding: 0px 5px;
     border-left: 2px solid white;
-    width: 60px;
+    width: 80px;
+    transition: border 0.5s ease-in-out;
+}
+
+li:hover {
+    border-left-width: 20px;
+    /*width: 72px;*/
+    transition: border-left-width 0.5s ease-in-out;
 }
 
 a {
@@ -12,7 +19,7 @@ a {
     color: white;
 }
 
-a:hover {
+nav a:hover {
     font-weight: bold;
 }
 
@@ -61,7 +68,7 @@ nav img {
     }
 
     #menu-container:hover {
-        background-color: #009371;
+        background-color: #C92C5B;
     }	
     
     #menu-container:hover li, ul:hover li{

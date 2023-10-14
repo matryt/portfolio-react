@@ -19,7 +19,7 @@
   }
   
   /* Remove the blur effect when the product is hovered */
-  .project img:hover {
+  .project:hover img {
     filter: blur(0px);
   }
   
@@ -38,3 +38,7 @@
     height:30px;
     border-top:2px solid #C92C5B;
   }
+
+.project a {
+  height: 100%;
+}

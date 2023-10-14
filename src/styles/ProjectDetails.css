@@ -1,0 +1,38 @@
+.project-details-content {
+    text-align: center;
+    margin-bottom:10px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top:auto;
+}
+
+.project-details-card {
+    text-align:center;
+    border: 2px solid #C92C5B;
+    border-radius: 10px;
+    width:fit-content;
+    margin: auto;
+    height: fit-content;
+}
+
+.project-details p {
+    display:inline-block;
+    width:fit-content;
+    margin: 10px 10px;
+}
+
+.encart-description p{
+    margin:0;
+    padding: 0 10px;
+}
+
+.encart {
+    background-color: #C92C5B;
+    border-bottom: 2px solid #C92C5B;
+    border-radius:7px 7px 0 0;
+}
+
+.project-details-card a img {
+    height: 40px;
+    margin: 5px 0;
+}

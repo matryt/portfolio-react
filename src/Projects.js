@@ -9,7 +9,7 @@ function Projects() {
         <Nav />
         <Header subtitle={"Projets"}/>
         <h3>I) Python</h3>
-        <Project name="Lecture de radios" image={radio} />
+        <Project name="Lecture de radios" image={radio} link="/projects/python/radio"/>
         </div>
     );
     }

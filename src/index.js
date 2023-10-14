@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Projects from './Projects';
+import Radios from './ProjectsDetails/Radios';
+import ContactForm from './components/ContactForm';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
   {
     path: "/projects",
     element: <Projects />,
+  },
+  {
+    path: "/projects/python/radio",
+    element: <Radios />,
+  },
+  {
+    path: "/contact",
+    element: <ContactForm />,
   },
 ]);
 
