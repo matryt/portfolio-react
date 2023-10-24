@@ -1,15 +1,14 @@
 
 /* Timeline Container */
 .exp-timeline {
-margin: 20px 5%;
+margin: 20px 0 20px 10vw;
 padding: 20px;
-width:40%;
+width:50%;
 }
 
 /* Card container */
 .timeline-card {
 position: relative;
-max-width: 400px;
 }
 
 /* setting padding based on even or odd */
@@ -107,4 +106,10 @@ right: -47px;
 
 .infos p {
     margin:0px;
+}
+
+@media screen and (max-width: 400px) {
+    .exp-timeline {
+        margin-left: 12vw;
+    }
 }

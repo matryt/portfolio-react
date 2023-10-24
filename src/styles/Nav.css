@@ -1,4 +1,4 @@
-li {
+nav li {
     list-style-type: none;
     margin: 0px 10px 0px 10px;
     display: block;
@@ -8,10 +8,9 @@ li {
     transition: border 0.5s ease-in-out;
 }
 
-li:hover {
+nav li:hover {
     border-left-width: 20px;
-    /*width: 72px;*/
-    transition: border-left-width 0.5s ease-in-out;
+    transition: border 0.5s ease-in-out;
 }
 
 a {
@@ -49,9 +48,17 @@ nav img {
 
     nav li {
         display:none;
-        border: 2px solid white;
+        border: 4px solid white;
         text-align:center;
         border-radius:10px;
+        margin: 5px 9px;
+        padding:2px;
+    }
+
+    nav li:hover {
+        border-left: 4px solid white;
+        border-bottom-width: 15px;
+        transition: border 0.5s ease-in-out;
     }
 
     nav {
@@ -62,14 +69,20 @@ nav img {
     #menu-container {
         z-index: 2;
         position: absolute;
-        height: 130px;
-        width:100px;
+        height: 170px;
+        width:110px;
         border-radius: 10px;
+        transition: height 0.5s ease-in-out;
     }
 
     #menu-container:hover {
         background-color: #C92C5B;
-    }	
+    }
+    
+    #menu-container:has(li:hover) {
+        height: 180px;
+        transition: height 0.5s ease-in-out;
+    }
     
     #menu-container:hover li, ul:hover li{
         display: block;
