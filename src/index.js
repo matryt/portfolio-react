@@ -5,6 +5,7 @@ import App from './App';
 import Projects from './Projects';
 import Radios from './ProjectsDetails/Radios';
 import ContactForm from './components/ContactForm';
+import Aliments from './ProjectsDetails/Aliments';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/projects/python/radio",
     element: <Radios />,
+  },
+  {
+    path: "/projects/python/aliments",
+    element: <Aliments />,
   },
   {
     path: "/contact",

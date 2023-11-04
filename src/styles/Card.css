@@ -12,8 +12,10 @@
     background-color: rgba(255, 255, 255, 0.1);
     padding: 10px;
     height: 100%;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
     justify-content:center;
+    width: 95%;
+    justify-items:center;
 }
 
 .card h3 {

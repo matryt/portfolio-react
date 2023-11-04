@@ -5,9 +5,10 @@ import github_logo from "../img/github/github-mark-white.png";
 
 export default function ProjectDetails(name, language, description, link) {
     return (
+        <div className="App" >
+        <Nav />
+        <Header subtitle={name} />
         <div className="project-details">
-            <Nav />
-            <Header subtitle={name} />
             <div className="project-details-content">
                 <div className="project-details-card">
                     <div className="encart">
@@ -28,6 +29,7 @@ export default function ProjectDetails(name, language, description, link) {
                     <a href={link} target="_blank" rel="noreferrer"><img src={github_logo} alt="Github logo"></img></a>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

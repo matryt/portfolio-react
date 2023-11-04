@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+.timeline {
+  display:block;
+  height: 100%;
+  width:90%;
+  padding: 0 0 5vh 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card:has(.timeline) {
+  height: 120%;
+}
+
+.timeline ul {
+  list-style: none;
+  position: relative;
+  width: 51vw;
+  padding: 1px 0px;
+  transition: margin 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.timeline ul:before {
+  display:block;
+  content: '';
+  width: 1px;
+  height: 110%;
+  position: absolute;
+  top: -15px;
+  left: 2px;
+  border-left: 2px dashed #fff;
+  
+}
+
+.timeline ul li {
+  position: relative;
+  margin-left: 30px ;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 14px;
+  border-radius: 6px;
+  width:50vw;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .08)
+}
+.timeline ul li:not(:first-child) {
+  margin-top: 60px;
+}
+.timeline ul li > span {
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  left: -28px;
+  top: 0;
+  position: absolute;
+}
+.timeline ul li > span:before, .timeline ul li > span:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  background: #C92C5B;
+  left: -5px;
+  top: 0;
+}
+.timeline ul li span:after {
+  top: 100%;
+}
+.timeline ul li > div {
+  margin-left: 10px;  
+}
+.timeline div .title, .timeline div .type {
+  font-weight: 600;
+}
+.timeline div .info {
+  font-weight: 300;
+}
+.timeline div > div {
+  margin-top: 5px;
+}
+.timeline span.number {
+  height: 100%;
+}
+.timeline span.number span {
+  position: absolute;
+  font-size: 13px;
+  left: -3000%;
+  font-weight: bold;
+  margin:auto;
+}
+.timeline span.number span:first-child {
+  top: -5px;
+}
+.timeline span.number span:last-child {
+  top: 95%;
+}
+
+.timeline span.number {
+  text-align: center;
+}
+
+#second span:after {
+  border:0px;
+  background-color: transparent;
+}
+
+@media screen and (max-width:1000px) and (min-width: 701px) {
+  .timeline ul {
+    margin-left:0vw;
+    margin-right:6vw;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .timeline ul {
+    margin-left:0vw;
+    margin-right:7vw;
+  }
+}

@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import Header from "./Header";
 import Nav from "./Nav";
 import "../styles/ContactForm.css";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({name: "", firstName: "", email: "", message: "", phone: ""});
@@ -18,7 +19,20 @@ const ContactForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`Nom: ${formData.name}, First name: ${formData.firstName}, Email: ${formData.email}, Message: ${formData.message}, Téléphone: ${formData.phone}`);
+    let dictEmail = {
+        "name": formData.name,
+        "firstName": formData.firstName,
+        "email": formData.email,
+        "phone": formData.phone,
+        "message": formData.message,
+    };
+    emailjs.send("service_umlaw7n","template_4pvfl0s",dictEmail, "9UeZjUDG9tAnLTukO")
+      .then((result) => {
+        console.log(result.text);
+        setFormData({name: "", firstName: "", email: "", message: "", phone: ""});
+    }, (error) => {
+        console.log(error.text);
+    });
   };
 
   return (
