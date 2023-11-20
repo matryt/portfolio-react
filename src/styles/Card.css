@@ -47,6 +47,16 @@
     display:block;
 }
 
+img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.card:has(img:hover) {
+    height: calc(100% + 30px);
+}
+
 @media screen and (max-width: 600px) {
     .card {
         display: block;
