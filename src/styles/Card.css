@@ -1,6 +1,6 @@
 .card {
     display: grid;
-    grid-template-areas: "card-title card-title" "img-container card-content";
+    grid-template-areas: "img-container card-title" "img-container card-content";
     grid-template-rows:auto 1fr;
     grid-template-columns: auto 1fr;
     margin-right: auto;
@@ -45,17 +45,21 @@
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 22px 70px 4px;
     display:block;
-}
-
-.card img:hover {
-    transform: scale(1.1);
-    transition: all 0.5s ease-in-out;
-
+    animation: slidein 2s forwards;
 }
 
 .card:has(img:hover) {
     height: calc(100% + 30px);
 }
+
+@keyframes slidein {
+    from {
+      transform: translateX(50px);
+    }
+    to {
+      transform: translateX(0);
+    }
+   }
 
 @media screen and (max-width: 600px) {
     .card {
