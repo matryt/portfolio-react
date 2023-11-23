@@ -107,13 +107,16 @@
 @media screen and (max-width:1000px) and (min-width: 701px) {
   .timeline ul {
     margin-left:0vw;
-    margin-right:6vw;
+    margin-right:3vw;
   }
 }
 
 @media screen and (max-width:700px) {
   .timeline ul {
     margin-left:0vw;
-    margin-right:7vw;
+    margin-right:0vw;
+  }
+  .timeline span.number span {
+    left:-2500%;
   }
 }
