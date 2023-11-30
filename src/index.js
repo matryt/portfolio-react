@@ -10,6 +10,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Tarot from './ProjectsDetails/Tarot';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/projects/python/aliments",
     element: <Aliments />,
+  },
+  {
+    path: "/projects/java/tarot",
+    element: <Tarot />,
   },
   {
     path: "/contact",
