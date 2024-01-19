@@ -3,6 +3,22 @@ import Header from "./Header";
 import Nav from "./Nav";
 import "../styles/ContactForm.css";
 import emailjs from "@emailjs/browser";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+
+const InfosDiv = () => {
+  return (
+    <div className="contact-infos">
+      <h3>Réseaux sociaux</h3>
+      <div className="infoline">
+        <a href="https://www.linkedin.com/in/mathieucuvelier/" target="_blank" rel="noreferrer"  ><FontAwesomeIcon icon={faLinkedin}/> Mathieu CUVELIER</a>
+      </div>
+      <div className="infoline">
+        <a href="https://www.github.com/matryt" target="_blank" rel="noreferrer"  ><FontAwesomeIcon icon={faGithub}/>@matryt</a>
+      </div>
+    </div>
+    );
+}
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({name: "", firstName: "", email: "", message: "", phone: ""});
@@ -36,9 +52,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div class="root">
+    <div className="root">
     <Nav />
     <Header subtitle={"Contact"} />
+    <InfosDiv />
     <form onSubmit={handleSubmit}>
       <div className="contact-line">
       <label htmlFor="name">Nom (*) : </label>
@@ -68,7 +85,7 @@ const ContactForm = () => {
       <br/>
       </div>
       
-      <button type="submit">Envoyer</button>
+      <button id="contact-form" type="submit">Envoyer</button>
     </form>
     </div>
   );

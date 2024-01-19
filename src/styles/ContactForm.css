@@ -8,7 +8,7 @@ body {
 
 input, textarea {
     border-radius: 10px;
-    background-color: #C92C5B;
+    background-color: #bd1a58;
     padding: 5px;
     border: transparent;
     text-align: center;
@@ -23,4 +23,46 @@ textarea {
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+.contact-infos {
+    border: 1px solid white;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.contact-infos h3 {
+    background-color: #01091D;
+    display: inline-block;
+    margin-top: 0;
+    position:absolute;
+    left:110px;
+    top:200px;
+    padding: 0px 20px;
+}
+
+.contact-infos svg {
+    height: 1.5em;
+    margin-top: 5px;
+    vertical-align: bottom;
+    display: inline;
+    color:white;
+    margin-right: 10px;
+}
+
+.contact-infos a {
+    font-size: 1.1em;
+}
+
+.infoline {
+    margin-bottom: 10px;
+}
+
+#contact-form {
+    border-radius: 20px;
+    padding: 6px;
+    background-color: #bd1a58;
+    border:1px solid white;
+    color:white;
+    font-size:0.9em;
 }

@@ -13,7 +13,7 @@ nav li:hover {
 }
 
 a:has(li:hover) {
-    color: #C92C5B;
+    color: #bd1a58;
     font-weight: bold;
 }
 
@@ -23,7 +23,7 @@ a {
 }
 
 nav {
-    background-color: #C92C5B;
+    background-color: #bd1a58;
     border-radius: 10px;
 }
 
@@ -41,7 +41,7 @@ nav img {
 
 svg {
     margin-right:5px;
-    color: #C92C5B;
+    color: #bd1a58;
 }
 
 @media screen and (max-width: 600px) {
