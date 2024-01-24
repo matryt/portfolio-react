@@ -13,6 +13,7 @@ const InfosDiv = () => {
       <div className="infoline">
         <a href="https://www.linkedin.com/in/mathieucuvelier/" target="_blank" rel="noreferrer"  ><FontAwesomeIcon icon={faLinkedin}/> Mathieu CUVELIER</a>
       </div>
+      <br/>
       <div className="infoline">
         <a href="https://www.github.com/matryt" target="_blank" rel="noreferrer"  ><FontAwesomeIcon icon={faGithub}/>@matryt</a>
       </div>
@@ -63,8 +64,8 @@ const ContactForm = () => {
       </div>
       <br/>
       <div className="contact-line">
-      <label htmlFor="first-name">Prénom (*) :</label>
-      <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} required />
+        <label htmlFor="firstName">Prénom (*) :</label>
+        <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} required />
       </div>
       <br/>
       

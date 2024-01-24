@@ -27,7 +27,7 @@ textarea {
 
 .contact-infos {
     border: 1px solid white;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 30px;
 }
 
@@ -37,13 +37,12 @@ textarea {
     margin-top: 0;
     position:absolute;
     left:110px;
-    top:200px;
+    top:180px;
     padding: 0px 20px;
 }
 
 .contact-infos svg {
     height: 1.5em;
-    margin-top: 5px;
     vertical-align: bottom;
     display: inline;
     color:white;
@@ -55,14 +54,47 @@ textarea {
 }
 
 .infoline {
+    display: inline-block;
+}
+
+.infoline:not(:last-child) {
     margin-bottom: 10px;
+}
+
+.infoline:hover a {
+    animation: boldTransition 0.5s linear 0s both
 }
 
 #contact-form {
     border-radius: 20px;
     padding: 6px;
     background-color: #bd1a58;
-    border:1px solid white;
+    border: 3px solid #bd1a58;
     color:white;
     font-size:0.9em;
+    transition: border 0.5s ease;
+}
+
+#contact-form:hover {
+    border: 3px solid white;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width:800px) {
+    .contact-infos {
+        margin-top: 30px;
+    }
+
+    .contact-infos h3 {
+            top: 190px;
+        }
+}
+
+@keyframes boldTransition {
+    from {
+        font-weight: 400;
+    }
+    to {
+        font-weight: 700;
+    }
 }

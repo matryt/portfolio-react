@@ -3,8 +3,6 @@
     grid-template-areas: "img-container card-title" "img-container card-content";
     grid-template-rows:auto 1fr;
     grid-template-columns: auto 1fr;
-    margin-right: auto;
-    margin-left: auto;
     box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
     height: 300px;
     border-radius: 10px;
@@ -21,7 +19,7 @@
 .card h3 {
     text-align: center;
     text-decoration: underline;
-    font-size:1.5em;
+    font-size:2em;
     text-underline-offset: 3px;
 }
 

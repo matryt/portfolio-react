@@ -1,4 +1,11 @@
-export default function EducationElement({title, description, startDate, endDate}) {
+function Date({date, planned}) {
+    if (planned) {
+        return <span className="planned">{date}</span>;
+    }
+    return <span>{date}</span>;
+}
+
+export default function EducationElement({title, description, startDate, endDate, planned}) {
     return (
         <li>
         <span></span>
@@ -7,9 +14,13 @@ export default function EducationElement({title, description, startDate, endDate
             <div className="info">{description}</div>
         </div>
         <span className="number">
-            <span>{startDate}</span>
-            <span>{endDate}</span>
+            <Date planned={planned} date={startDate} />
+            <Date planned={planned} date={endDate} />
         </span>
         </li>
     )
     }
+
+EducationElement.defaultProps = {
+    planned: false
+}
