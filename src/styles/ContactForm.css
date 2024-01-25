@@ -37,7 +37,7 @@ textarea {
     margin-top: 0;
     position:absolute;
     left:110px;
-    top:180px;
+    top:207px;
     padding: 0px 20px;
 }
 
@@ -83,11 +83,14 @@ textarea {
 @media screen and (max-width:800px) {
     .contact-infos {
         margin-top: 30px;
+        padding-top: 20px;
+        
     }
 
     .contact-infos h3 {
-            top: 190px;
-        }
+        top: 215px;
+        padding-bottom: 0px;
+    }
 }
 
 @keyframes boldTransition {

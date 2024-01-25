@@ -6,6 +6,7 @@ import Projects from './Projects';
 import Radios from './ProjectsDetails/Radios';
 import ContactForm from './components/ContactForm';
 import Aliments from './ProjectsDetails/Aliments';
+import Rogue from './ProjectsDetails/Rogue';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/projects/python/aliments",
     element: <Aliments />,
+  },
+  {
+    path: "/projects/python/rogue",
+    element: <Rogue />,
   },
   {
     path: "/projects/java/tarot",
