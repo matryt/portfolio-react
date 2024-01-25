@@ -1,9 +1,10 @@
 import "../styles/Project.css"
 
-export default function Project({name, image, link}) {
+export default function Project({name, image, link, cls}) {
+    let cl = "project " + cls;
     return (
         <a href={link}>
-            <div className="project">
+            <div className={cl}>
             
             <img src={image} alt={name} />
             <div className="name-container">
