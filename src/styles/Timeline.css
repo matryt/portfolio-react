@@ -24,7 +24,7 @@
   display:block;
   content: '';
   width: 1px;
-  height: 110%;
+  height: 105%;
   position: absolute;
   top: -15px;
   left: 2px;
@@ -38,7 +38,7 @@
   background-color: rgba(255, 255, 255, 0.2);
   padding: 14px;
   border-radius: 6px;
-  width:50vw;
+  width:65vw;
   box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .08)
 }
 .timeline ul li:not(:first-child) {
@@ -59,12 +59,12 @@
   border-radius: 50%;
   border: 2px solid #fff;
   position: absolute;
-  background: #C92C5B;
+  background: #bd1a58;
   left: -5px;
   top: 0;
 }
 .timeline ul li span:after {
-  top: 100%;
+  top: 93%;
 }
 .timeline ul li > div {
   margin-left: 10px;  
@@ -83,16 +83,25 @@
 }
 .timeline span.number span {
   position: absolute;
-  font-size: 13px;
-  left: -3000%;
+  font-size: 16px;
+  left: -3750%;
   font-weight: bold;
   margin:auto;
 }
+
+#second span.number span {
+  left:-4800%;
+}
+
+.timeline span.number span.planned {
+  left: -5000%;
+}
+
 .timeline span.number span:first-child {
-  top: -5px;
+  top: -2px;
 }
 .timeline span.number span:last-child {
-  top: 95%;
+  top: 91%;
 }
 
 .timeline span.number {

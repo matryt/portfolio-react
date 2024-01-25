@@ -5,6 +5,7 @@ nav li {
     padding: 5px;
     width: 80px;
     transition: all 0.5s ease-in-out;
+    font-size: 1.1em;
 }
 
 nav li:hover {
@@ -13,7 +14,7 @@ nav li:hover {
 }
 
 a:has(li:hover) {
-    color: #C92C5B;
+    color: #bd1a58;
     font-weight: bold;
 }
 
@@ -23,7 +24,7 @@ a {
 }
 
 nav {
-    background-color: #C92C5B;
+    background-color: #bd1a58;
     border-radius: 10px;
 }
 
@@ -41,7 +42,11 @@ nav img {
 
 svg {
     margin-right:5px;
-    color: #C92C5B;
+    color: #bd1a58;
+}
+
+.card div {
+    font-size: 1.1em;
 }
 
 @media screen and (max-width: 600px) {
@@ -73,14 +78,14 @@ svg {
     #menu-container {
         z-index: 2;
         position: absolute;
-        height: 170px;
+        height: 180px;
         width:110px;
         border-radius: 10px;
         transition: all 0.5s ease-in-out;
     }
 
     #menu-container:hover {
-        background-color: #C92C5B;
+        background-color: #bd1a58;
         transition: all 0.5s ease-in-out;
     }
     

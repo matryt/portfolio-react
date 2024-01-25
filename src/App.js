@@ -20,7 +20,7 @@ function App() {
         <Timeline id="first">
           <EItem title="Lycée Auguste Renoir" description="Baccalauréat général, mention très bien (Spécialités Mathématiques, NSI et Physique)" startDate="2019" endDate="2022"></EItem>
           <EItem title="Polytech Nice-Sophia" description="Prépa intégrée" startDate="2022" endDate="2024"></EItem>
-          <EItem title="Polytech Nice-Sophia" description="Cycle ingénieur Systèmes d'Information" startDate="2024 (prévu)" endDate="2027 (prévu)"></EItem>
+          <EItem title="Polytech Nice-Sophia" description="Cycle ingénieur Systèmes d'Information" startDate="2024 (prévu)" endDate="2027 (prévu)" planned={true}></EItem>
         </Timeline>
       </Card>
       <Card title="Expériences professionnelles">
