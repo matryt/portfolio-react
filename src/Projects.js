@@ -17,7 +17,7 @@ export function Mentions(mentionList) {
     for (let person of mentionList) {
         mentionItems.push( // Utiliser push pour ajouter des éléments JSX au tableau
             <li key={person.id}>
-                {person.name} (Github: <a href={person.link}>{person.username}</a>)
+                {person.name} (Github: <a href={person.link} target="_blank" rel="noreferrer">{person.username}</a>)
             </li>
         );
     }
