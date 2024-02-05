@@ -25,20 +25,28 @@ textarea {
     align-items: center;
 }
 
-.contact-infos {
+.contact-infos, form {
     border: 1px solid white;
     padding: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-.contact-infos h3 {
+.contact-infos h3, form h3 {
     background-color: #01091D;
     display: inline-block;
     margin-top: 0;
+    padding: 0 20px;
     position:absolute;
+}
+
+.contact-infos h3 {
     left:110px;
-    top:180px;
-    padding: 0px 20px;
+    top:207px;
+}
+
+form h3 {
+    left: 85px;
+    top: 345px;
 }
 
 .contact-infos svg {
@@ -83,11 +91,19 @@ textarea {
 @media screen and (max-width:800px) {
     .contact-infos {
         margin-top: 30px;
+        padding-top: 20px;
+        
     }
 
     .contact-infos h3 {
-            top: 190px;
-        }
+        top: 215px;
+        padding-bottom: 0;
+    }
+
+    form h3 {
+        top: 355px;
+        padding-bottom: 0;
+    }
 }
 
 @keyframes boldTransition {

@@ -6,6 +6,9 @@ import Projects from './Projects';
 import Radios from './ProjectsDetails/Radios';
 import ContactForm from './components/ContactForm';
 import Aliments from './ProjectsDetails/Aliments';
+import Rogue from './ProjectsDetails/Rogue';
+import Arduino from "./ProjectsDetails/Arduino";
+import NotFound from './NotFound';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -30,6 +33,10 @@ const router = createBrowserRouter([
     element: <Aliments />,
   },
   {
+    path: "/projects/python/rogue",
+    element: <Rogue />,
+  },
+  {
     path: "/projects/java/tarot",
     element: <Tarot />,
   },
@@ -37,6 +44,14 @@ const router = createBrowserRouter([
     path: "/contact",
     element: <ContactForm />,
   },
+  {
+    path: "/projects/divers/arduino",
+    element: <Arduino />
+  },
+  {
+    path: "*",
+    element: <NotFound />
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
