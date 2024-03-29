@@ -26,7 +26,8 @@ function App() {
       <Card title="Expériences professionnelles">
         <Timeline id="second">
           <EItem title="Stage de découverte de troisième" startDate="Février 2019" description="Séquence d'observation en milieu professionnel de troisième dans le service Systèmes d'Information de la Ville de Saint-Laurent-du-Var : découverte du projet fibre mené par le service, du fonctionnement du système informatique scolaire et communal..." place="Mairie de Saint Laurent du Var" parity="odd"/>
-          <EItem title="Stage ouvrier " startDate="Juillet 2023" description="A ajouter..." place="RISF, Nice" parity="even"/>
+          <EItem title="Stage ouvrier " startDate="Juillet 2023" description="Réalisation d’un tableau de bord numérique contenant météo, trafic, photos et actualités de l’entreprise
+Raspberry Pi 4 pour l’hardware - Flask, HTML, CSS, JavaScript pour le software" place="RISF, Nice" parity="even"/>
         </Timeline>
       </Card>
     </div>

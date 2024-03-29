@@ -14,6 +14,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Tarot from './ProjectsDetails/Tarot';
+import Weather from "./ProjectsDetails/Weather";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
   {
     path: "/projects/divers/arduino",
     element: <Arduino />
+  },
+  {
+    path: "/projects/react_native/weather",
+    element: <Weather />
   },
   {
     path: "*",
