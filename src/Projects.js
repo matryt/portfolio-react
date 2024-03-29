@@ -6,6 +6,7 @@ import fruits from "./img/fruits.jpeg";
 import tarot from "./img/tarot.png";
 import rogue from "./img/rogue.png";
 import arduino from "./img/maixduino.png";
+import meteo from "./img/meteo.jpg";
 import {useEffect, useRef, useState} from "react";
 
 function calculateWidth(cards) {
@@ -34,10 +35,10 @@ export function Mentions(mentionList) {
 }
 
 function Projects() {
-    const [ProjectsRef, setProjectsRef] = useState([useRef(null), useRef(null), useRef(null)]);
+    const [ProjectsRef, setProjectsRef] = useState([useRef(null), useRef(null), useRef(null), useRef(null)]);
     useEffect(() => {
         const handleResize = () => {
-            const cards = [document.querySelectorAll(".python"), document.querySelectorAll(".java"), document.querySelectorAll(".divers")];
+            const cards = [document.querySelectorAll(".python"), document.querySelectorAll(".java"), document.querySelectorAll(".react-native"), document.querySelectorAll(".divers")];
             for (let i = 0; i<ProjectsRef.length; i++) {
                 let p = ProjectsRef[i];
                 if (p.current) {
@@ -64,10 +65,16 @@ function Projects() {
             <div className="projects" ref={ProjectsRef[1]}>
                 <Project cls="java" name="Jeu de tarot" image={tarot} link="/projects/java/tarot"/>
             </div>
-            <h3>III) Divers</h3>
+            <h3>III) React Native</h3>
             <div className="projects" ref={ProjectsRef[2]}>
+                <Project cls="react-native" name="Application météo" image={meteo}
+                         link="/projects/react_native/weather"/>
+            </div>
+            <h3>IV) Divers</h3>
+            <div className="projects" ref={ProjectsRef[3]}>
                 <Project cls="divers" name="Projet Arduino" image={arduino} link="/projects/divers/arduino"/>
             </div>
+
         </div>
     );
 }
